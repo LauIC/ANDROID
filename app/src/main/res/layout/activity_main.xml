@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logo" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailLog"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="230dp"
+        android:hint="Email"
+        app:boxBackgroundColor="#F9E0C1"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#E4BD8F"
+        app:hintTextColor="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PassLog"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="330dp"
+        android:hint="Password"
+        app:boxBackgroundColor="#F9E0C1"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#E4BD8F"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#000000"
+        app:helperText="Al menos 8 caracteres"
+        app:hintTextColor="#555554"
+        app:passwordToggleTint="#0E0E0E">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="129dp"
+        android:layout_marginBottom="198dp"
+        android:fontFamily="@font/bellota_light"
+        android:text="¿Aún no estas registrado?" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="131dp"
+        android:layout_marginBottom="178dp"
+        android:fontFamily="@font/bellota_light"
+        android:text="!Comienza a ser un Biter!"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="135dp"
+        android:backgroundTint="#A55E30"
+        android:onClick="Registrar"
+        android:text="Registrarse"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/buttonLog"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="159dp"
+        android:layout_marginBottom="267dp"
+        android:backgroundTint="#A55E30"
+        android:text="Entrar"
+        android:textSize="12dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="54dp"
+        android:text="Si lo deseas puedes darte de baja "
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/darbaja"
+        android:layout_width="57dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="179dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="DarBaja"
+        android:text="aquí"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:backgroundTint="@color/white" />
+
+</RelativeLayout>
